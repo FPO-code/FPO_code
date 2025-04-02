@@ -102,3 +102,14 @@ Diversity (Entropy): The higher the better.
 | SimPO | 56.0% | 55.8% | +0.4 |
 | TDPO | 56.2% | 58.0% | +0.4 |
 | FPO | 50.0% | 50.0% | 0.0 |
+
+**GPU Memory Consumption (Peak Memory in GB)**
+
+| Method | Peak Memory (GB) |
+| --- | --- |
+| SFT | 54 |
+| DPO | 66 |
+| SimPO | 55 |
+| TDPO | 67 |
+| FPO | 58 |
+| FPO w/ MLSAE | 58=6 |
