@@ -1,4 +1,4 @@
-## LLaMA 3
+## 1. LLaMA 3
 ### Experimental Setup
 
 | **Aspect**                  | **Details**                                                                                           |
@@ -71,7 +71,7 @@ Diversity (Entropy): The higher the better.
 | TDPO | 67 |
 | FPO | 58 |
 
-## MLSAE
+## 2. MLSAE
 
 **Gemma-2 2b** 
 
