@@ -1,5 +1,5 @@
-
-## Experimental Setup
+## LLaMA 3
+### Experimental Setup
 
 | **Aspect**                  | **Details**                                                                                           |
 |-----------------------------|-------------------------------------------------------------------------------------------------------|
@@ -26,9 +26,7 @@
 | **GPU Memory Consumption**                  | Recorded peak memory usage during training, aligning with Hardware Efficiency of FPO (Section 5.1).   |
 
 
-## Experimental Results:
-
-### LLaMA w/ normal SAE
+### Experimental Results:
 
 | Method v.s. FPO | AlpacaEval 2 | Arena-Hard | MT-Bench |
 | --- | --- | --- | --- |
