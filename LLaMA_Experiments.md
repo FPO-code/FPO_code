@@ -1,5 +1,5 @@
 
-### Experimental Setup
+## Experimental Setup
 
 | **Aspect**                  | **Details**                                                                                           |
 |-----------------------------|-------------------------------------------------------------------------------------------------------|
@@ -8,7 +8,7 @@
 | **Fine-Tuning Parameters**  | Learning rate: 2e-5, Batch size: 64, Max sequence length: 2048, Cosine learning rate schedule with 10% warmup steps for 1 epoch. |
 | **Hardware**                | Tested memory usage on 2 H100 GPUs with ZeRO3.                                                       |
 
-### Baseline Selection
+## Baseline Selection
 
 | **Baseline** | **Description**                                                                                       |
 |--------------|-------------------------------------------------------------------------------------------------------|
@@ -26,7 +26,9 @@
 | **GPU Memory Consumption**                  | Recorded peak memory usage during training, aligning with Hardware Efficiency of FPO (Section 5.1).   |
 
 
-**Experimental Results:**
+## Experimental Results:
+
+### LLaMA w/ normal SAE
 
 | Method v.s. FPO | AlpacaEval 2 | Arena-Hard | MT-Bench |
 | --- | --- | --- | --- |
@@ -70,3 +72,35 @@ Diversity (Entropy): The higher the better.
 | SimPO | 55 |
 | TDPO | 67 |
 | FPO | 58 |
+
+## MLSAE
+
+**Gemma-2 2b** 
+
+| Method v.s. FPO | AlpacaEval 2 | Arena-Hard | MT-Bench |
+| --- | --- | --- | --- |
+| SFT | 59.8% | 58.4% | +0.4 |
+| DPO | 56.2% | 56.4% | +0.3 |
+| SimPO | 56.2% | 54.8% | +0.4 |
+| TDPO | 56.8% | 59.0% | +0.2 |
+| FPO | 50.0% | 50.0% | 0.0 |
+
+**Gemma-2 9b** 
+
+| Method v.s. FPO | AlpacaEval 2 | Arena-Hard | MT-Bench |
+| --- | --- | --- | --- |
+| SFT | 58.4% | 56.8% | +0.5 |
+| DPO | 54.8% | 57.0% | +0.4 |
+| SimPO | 56.6% | 55.2% | +0.2 |
+| TDPO | 54.8% | 58.0% | +0.3 |
+| FPO | 50.0% | 50.0% | 0.0 |
+
+**LLaMA-3 8b** 
+
+| Method v.s. FPO | AlpacaEval 2 | Arena-Hard | MT-Bench |
+| --- | --- | --- | --- |
+| SFT | 59.0% | 58.0% | +0.3 |
+| DPO | 57.2% | 56.8% | +0.5 |
+| SimPO | 56.0% | 55.8% | +0.4 |
+| TDPO | 56.2% | 58.0% | +0.4 |
+| FPO | 50.0% | 50.0% | 0.0 |
