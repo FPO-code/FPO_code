@@ -1,4 +1,4 @@
-##Experimental Setup
+## Experimental Setup
 
 **Table 1: Experimental Setup**
 
@@ -27,7 +27,7 @@
 | Safety | Jailbreak Bench & AdvBench | Attack success rate (%) (assessed by LLaMA-Guard2, lower is better) |
 | Sentiment | Twitter Financial News Sentiment (500 positive, 500 negative) | Ratio of sentiment classification (evaluated by Deepseek V3 API) |
 
-##Experimental Results
+## Experimental Results
 
 **1. Can SAEs Identify Relevant Features from These Datasets?**
 
