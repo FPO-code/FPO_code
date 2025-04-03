@@ -112,7 +112,7 @@
     | FPO (beta=0) | 30 |
     | FPO (beta=0.1) | 40 |
     | FPO (beta=1 on safety-related features) | **80** |
-    | FPO (beta=1 on harmful features) | **35** |
+    | FPO (beta=1 on harmful features) | **5** |
 - **Sentiment (Ratio)**
     
     
