@@ -1,3 +1,7 @@
+##  SAE-based FPO method with an alternative TDPO with activation-level alignment, where regularization is applied directly to pooled activations
+Please refer to: 
+https://github.com/FPO-code/FPO_code/blob/main/tdpo_vs_fpo.md
+
 ## Experimental Setup
 
 **Table 1: Experimental Setup**
